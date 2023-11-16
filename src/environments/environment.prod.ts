@@ -8,7 +8,7 @@ export const environment = {
     messagingSenderId: "142750961373",
     appId: "1:142750961373:web:76cdd4a48cfe651c415534",
     
-  },
+  }, apiUrl:"https://dev.matiivilla.cl/duoc/location/",
   recaptcha:{
 
     sitekey: "6LdAB_QoAAAAAFaLsSf4yxhlQCwAwEj8fn6fe1MI"
