@@ -48,7 +48,7 @@ export class LoginPage implements OnInit {
       this.helper.showAlert("Debe ingresar una contraseña", "Error");
       return;
     }
-  
+    //hola
     try {
       const req = await this.auth.signInWithEmailAndPassword(this.usuario, this.contrasena);
   
@@ -83,7 +83,7 @@ export class LoginPage implements OnInit {
   }
   
 
-  
+  //muestra la contraseña
   veronover() {
     this.showPassword = !this.showPassword;
   }
