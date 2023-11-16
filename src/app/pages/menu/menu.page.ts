@@ -76,7 +76,7 @@ export class MenuPage implements OnInit {
   }
   
 
-
+//aqui se cargara el menu
   cargarMenu(){
     this.menuArray.push(
       {
