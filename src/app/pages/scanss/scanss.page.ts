@@ -27,5 +27,5 @@ export class ScanssPage implements OnInit {
     }
   }
   
-
+//holass
   }
