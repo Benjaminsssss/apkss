@@ -57,4 +57,6 @@ export class ResetPasswordPage implements OnInit {
   captchaResolved(event: any) {
     this.isCaptchaValid = event;
   }
+
+ //benjamin
 }
