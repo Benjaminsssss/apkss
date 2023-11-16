@@ -22,7 +22,7 @@ export class ResetPasswordPage implements OnInit {
 
   ngOnInit() {
   }
-
+  //sip
   get sitekey() {
     return environment.recaptcha.sitekey;
   }
