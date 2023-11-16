@@ -48,7 +48,7 @@ export class LoginPage implements OnInit {
       this.helper.showAlert("Debe ingresar una contraseña", "Error");
       return;
     }
-  
+    //hola
     try {
       const req = await this.auth.signInWithEmailAndPassword(this.usuario, this.contrasena);
   
