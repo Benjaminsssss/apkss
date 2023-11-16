@@ -1,0 +1,56 @@
+.box ion-icon{
+    font-size: 50px;
+}
+
+.box-disabled ion-icon{
+    font-size: 50px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    color: green;
+}
+.box-disabled{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    color: red;
+}
+
+
+
+.skeleton{
+    height: 70px;
+}
+
+.box-skeleton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.custom-center-button {
+    display: block; /* Asegura que el botón ocupe toda la anchura disponible */
+    margin: 0 auto; /* Centra horizontalmente el botón */
+    text-align: center; /* Alinea el texto del botón en el centro */
+    margin-top: 20px;
+  }
+
+.gif-container{
+    margin-top: 10px;
+}
+
+
+ion-content {
+    --background: #07386c; // Fondo azul para el contenido
+  }
+  
+ion-card {
+    background-color: #ffffff; // Fondo blanco para el card
+  }
+
+  

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerlink="/login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+ 
+  <ion-content class="ion-text-center">
+  
+    <ion-card *ngFor="let i of usuarioFiltro">
+      <ion-card-header>
+        <div class="center-content">
+          <img [src]="selfieImage" *ngIf="selfieImage" alt="Selfie">
+          
+          <ion-button (click)=" tomarSelfie()" class="selfie-button">Tomar Selfie</ion-button>
+        </div>
+      </ion-card-header>
+      <ion-card-content>
+        <h1>Datos del estudiante</h1>
+        Latitud: {{ latitude }}
+        <br>
+        Longitud: {{ longitude }}
+        <br>
+        <h3>{{i.nombre}}</h3>
+        <h3>{{i.apellido}}</h3>
+        <h3>{{i.rut}}</h3>
+        <h3>{{i.regionSel}}</h3>
+        <h3>{{i.comunaSel}}</h3>
+        <p>{{ scannedData | json }}</p>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+

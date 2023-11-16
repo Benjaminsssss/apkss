@@ -1,0 +1,26 @@
+ion-card-title{
+    text-align: center;
+    
+    }
+    
+ion-button{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+ion-card{
+        margin-top: 100px;
+    }
+ion-content {
+        --background: #07386c; // Color azul de fondo, puedes cambiar el código de color según tus preferencias
+      }
+      
+.card-custom {
+        background-color: #ffffff; // Color de fondo de la tarjeta, puedes cambiarlo según tus preferencias
+      }
+      
+.custom-input {
+        background-color: #f8f8f8; // Color de fondo de los campos de entrada, puedes cambiarlo según tus preferencias
+      }
+      

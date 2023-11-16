@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerlink="/menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-text-center">
+  <div class="center-content">
+   
+    <img src="assets/img/Vxyv.gif" alt="Animación GIF" class="gif">
+    
+    
+    <ion-button (click)="escans()" class="boton-escanear">Escanear QR</ion-button>
+    
+    <ion-card *ngIf="codigoEscaneado">
+      <ion-card-content>
+        {{ codigoEscaneado }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

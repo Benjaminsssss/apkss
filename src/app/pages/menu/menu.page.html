@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>menu</ion-title>
+
+    <ion-button (click)="logout()" slot="end">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button (click)="menu()" slot="start">
+      <ion-icon name="menu-outline"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-icon (click)="closeMenu()" style="font-size: 30px;" name="close-outline" slot="end"></ion-icon>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content class="ion-padding" scrollY="false">
+    <ion-list>
+      <ion-item (click)="perfilUsuario()">
+        <ion-icon style="padding-right: 10px; font-size: 35px;" name="person-circle-outline"></ion-icon>
+        <h3>Perfil</h3>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
+</div>
+
+<ion-content [fullscreen]="true">
+
+  <ng-container *ngIf="!loading">
+    <ion-card >
+      <ion-item>
+        <div class="custom-center-button">
+          <ion-button [routerLink]="['/scanss']">Registrar clase</ion-button>
+          <ion-button (click)="mostrarModal()" fill="Clear">
+            <ion-icon name="help-circle"></ion-icon>
+          </ion-button>
+          <br>
+          <div class="gif-container">
+            <img src="assets/img/0_RvqF8KsoKN_uyI37.gif" alt="Animación GIF" />
+          </div>  
+        </div>
+      </ion-item>
+
+
+    </ion-card>
+  </ng-container>
+
+</ion-content>

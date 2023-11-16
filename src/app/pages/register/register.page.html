@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>registrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro usuario</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+  <div class="container">  <ion-card-content>
+    <ion-input [(ngModel)]="usuario" label="Usuario: " type="email" placeholder="example@gmail.com" ></ion-input>
+    <ion-input [(ngModel)]="contrasena" type="text" label="contraseña: " required minlength="6"></ion-input>
+    <ion-input [(ngModel)]="nombre" type="text" label="Nombre: "></ion-input>
+    <ion-input [(ngModel)]="apellido" type="text" label="Apellido: "></ion-input>
+    <ion-input [(ngModel)]="rut" type="text" label="Rut: "required minlength="9"></ion-input>
+
+    <ion-list>
+      <ion-item>
+        <ion-select (ionChange)="cargarComuna()" placeholder="Seleccione region" [(ngModel)]="regionSel">
+          <ion-select-option *ngFor="let i of regiones" [value]="i.id">{{i.nombre}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item>
+        <ion-select [disabled]="disabledComuna" placeholder="Seleccione comuna" [(ngModel)]="comunaSel">
+          <ion-select-option *ngFor="let i of comunas" [value]="i.id">{{i.nombre}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <br>
+
+    <ion-button (click)="registro()" color="tertiary"  shape="round"> Registro </ion-button>
+  </ion-card-content></div>
+  </ion-card>
+</ion-content>
