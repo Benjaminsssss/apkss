@@ -83,7 +83,7 @@ export class LoginPage implements OnInit {
   }
   
 
-  //muestra la contraseñaaaa
+  //cambio
   veronover() {
     this.showPassword = !this.showPassword;
   }
